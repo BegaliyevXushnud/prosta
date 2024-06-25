@@ -723,9 +723,6 @@ video {
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
 }
-.w-\[\] {
-  width: ;
-}
 .w-full {
   width: 100%;
 }

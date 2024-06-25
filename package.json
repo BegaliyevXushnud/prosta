@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "build": "postcss styles.css -o output.css",
-     "watch": "postcss styles.css -o output.css --watch"
+  "build": "postcss src/style.css -o public/output.css",
+     "watch": "postcss src/style.css -o public/output.css --watch"
   },
   "keywords": [],
   "author": "",
