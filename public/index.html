@@ -4,10 +4,270 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    <h1 class="bg-slate-800 text-[red] text-center text-[56px]">Wallpapers incríveis de animes </h1>
-    <img src="./images/c8b7413ccd33544ab59691a09a7b4107.jpg" class="w-full h-full object-cover">
+    <style>
+       
+        .hover\:text-custom-hover:hover {
+          color: #605DEC;
+        }
+        h1{
+            font-weight: 700;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 80px;
+            background-image: url("./images/color.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           text-align: center;
+        }
+        @media (min-width:800px) {
+            h1{
+                font-size: 100px;
+            }
+        }
+        .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+      </style>
+    <header class="bg-[#FFFFFF] text-[#7C8DB0] p-4 w-full fixed z-10">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="flex items-center space-x-4">
+            <img src="./images/logo.svg" alt="Logo" class="h-[54] w-[134px]">
+          </div>
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-[black] text-[24px] focus:outline-none">
+              <i class="fas fa-bars fa-lg"></i>
+            </button>
+          </div>
+          <nav id="menu" class="hidden md:flex items-center space-x-4">
+            <ul class="flex flex-col md:flex-row md:items-center gap-[30px] space-y-5 md:space-y-0 md:space-x-4">
+              <li><a href="#" class="text-[#605DEC] font-[Nunito Sans] text-[18px] font-normal hover:underline">Flights</a></li>
+              <li><a href="#" class="text-[#7C8DB0] font-[Nunito Sans] text-[18px] font-normal hover:underline hover:text-custom-hover">Hotels</a></li>
+              <li><a href="#" class="text-[#7C8DB0] font-[Nunito Sans] text-[18px] font-normal hover:underline hover:text-custom-hover">Packages</a></li>
+              <li><a href="#" class="text-[#7C8DB0] font-[Nunito Sans] text-[18px] font-normal hover:underline hover:text-custom-hover">Sign in</a></li>
+              <li><button class="bg-[#605DEC] text-[#FAFAFA] w-[95px] h-[48px] px-4 py-2 rounded hover:bg-transparent border border-solid border-blue-500 p-4  text-[#7C8DB0]font-[Nunito Sans] text-[16px] font-normal hover:text-[blue] ">Sign Up</button></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <br>
+      <main class="w-full h-auto mt-[50px]">
+        <section class="w-full min-h-screen flex flex-col items-center justify-center ">
+          <img src="./images/dunyo.png" alt="Background Image" class="h-[700px] w-full object-cover">
+          <div class="absolute inset-0 flex flex-col items-center justify-center  px-4 md:px-0 gap-[120px]">
+            <h1 class="text-4xl md:text-6xl lg:text-9xl text-center">It's more than <br> just a trip</h1>
+            <div class="w-full md:w-[80%] flex flex-wrap mt-4 justify-center gap-4">
+              <div class="flex flex-col md:flex-row md:w-1/5 items-center gap-2 bg-white p-2 md:p-4">
+                <img src="./images/Union.svg" alt="samaliyot" class="w-6 h-6">
+                <h2 class="text-[18px]">From where?</h2>
+              </div>
+              <div class="flex flex-col md:flex-row md:w-1/5 items-center gap-2 bg-white p-2 md:p-4">
+                <img src="./images/Union (1).svg" alt="samaliyot" class="w-6 h-6">
+                <h2 class="text-[18px]">Where to?</h2>
+              </div>
+              <div class="flex flex-col md:flex-row md:w-1/5 items-center gap-2 bg-white p-2 md:p-4">
+                <img src="./images/calendar with dates.svg" alt="calendar" class="w-6 h-6">
+                <h2 class="text-[18px]">Depart - Return</h2>
+              </div>
+              <div class="flex flex-col md:flex-row md:w-1/5 items-center gap-2 bg-white p-2 md:p-4">
+                <img src="./images/person solid.svg" alt="person" class="w-6 h-6">
+                <h2 class="text-[18px]">1 adult</h2>
+              </div>
+              <button class="bg-[#605DEC] w-full md:w-1/6 text-[#FAFAFA] text-[18px] p-2 md:p-4 rounded">Search</button>
+            </div>
+          </div>
+        </section>
+       <section class="py-12 px-4 md:px-0">
+    <div class="container mx-auto flex flex-col gap-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <h2 class="text-[#6E7491] text-2xl md:text-3xl">Find your next adventure with these <span class="text-[#605DEC]">flight deals</span></h2>
+            <h3 class="text-[#A1B0CC] text-2xl md:text-3xl flex items-center gap-2">
+                All
+                <span><i class="fas fa-arrow-right"></i></span>
+            </h3>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="card bg-white rounded-lg shadow-lg flex flex-col">
+                <img class="w-full h-4/5 object-cover rounded-t-lg" src="./images/shahar.svg" alt="City Image">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-semibold">The Bund, <span class="text-[#605DEC]">Shanghai</span></h2>
+                        <p class="text-[#7C8DB0] mt-2 text-sm md:text-base">China’s most international city</p>
+                    </div>
+                    <div class="text-xl md:text-2xl font-bold text-[#6E7491] self-end mt-4">$598</div>
+                </div>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg flex flex-col">
+                <img class="w-full h-4/5 object-cover rounded-t-lg" src="./images/sidney.svg" alt="City Image">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-semibold">Sydney Opera House, <span class="text-[#605DEC]">Sydney</span></h2>
+                        <p class="text-[#7C8DB0] mt-2 text-sm md:text-base">Take a stroll along the famous harbor</p>
+                    </div>
+                    <div class="text-xl md:text-2xl font-bold text-[#6E7491] self-end mt-4">$981</div>
+                </div>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg flex flex-col">
+                <img class="w-full h-4/5 object-cover rounded-t-lg" src="./images/xitoy.png" alt="City Image">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-semibold">Kōdaiji Temple, <span class="text-[#605DEC]">Kyoto</span></h2>
+                        <p class="text-[#7C8DB0] mt-2 text-sm md:text-base">Step back in time in the Gion district</p>
+                    </div>
+                    <div class="text-xl md:text-2xl font-bold text-[#6E7491] self-end mt-4">$633</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-12 px-4 md:px-0 w-full">
+    <div class="container mx-auto flex flex-col gap-8">
+        <img class="w-full h-96 object-cover rounded-lg" src="./images/daraxt.jpg" alt="City Image" style="border-radius: 12px;">
+        <div class="p-6 flex flex-col justify-between flex-1">
+            <div>
+                <h2 class="text-xl md:text-2xl font-semibold">Sydney Opera House, <span class="text-[#605DEC]">Sydney</span></h2>
+                <p class="text-[#7C8DB0] mt-2 text-sm md:text-base">Take a stroll along the famous harbor</p>
+            </div>
+            <div class="text-xl md:text-2xl font-bold text-[#6E7491] self-end mt-4">$981</div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-12 px-4 md:px-0">
+    <div class="container mx-auto flex flex-col gap-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <h2 class="text-[#6E7491] text-2xl md:text-3xl">Explore unique <span class="text-[#5CD6C0]">places to stay</span></h2>
+            <h3 class="text-[#A1B0CC] text-2xl md:text-3xl flex items-center gap-2">
+                All
+                <span><i class="fas fa-arrow-right"></i></span>
+            </h3>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="card bg-white rounded-lg shadow-lg flex flex-col">
+                <img class="w-full h-4/5 object-cover rounded-t-lg" src="./images/pllayj.svg" alt="City Image">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-semibold">Stay among the atolls in<span class="text-[#5CD6C0]">  Maldives </span></h2>
+                        <p class="text-[#7C8DB0] mt-2 text-sm md:text-base">From the 2nd century AD, the islands were known as the 'Money Isles' due to the abundance of cowry shells, a currency of the early ages.</p>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg flex flex-col">
+                <img class="w-full h-4/5 object-cover rounded-t-lg" src="./images/misr.svg" alt="City Image">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-semibold">Experience the Ourika Valley in <span class="text-[#5CD6C0]"> Morocco </span></h2>
+                        <p class="text-[#7C8DB0] mt-2 text-sm md:text-base">Morocco’s Hispano-Moorish architecture blends influences from Berber culture, Spain, and contemporary artistic currents in the Middle East.</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg flex flex-col">
+                <img class="w-full h-4/5 object-cover rounded-t-lg" src="./images/qozoq.svg" alt="City Image">
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-semibold">Live traditionally in<span class="text-[#5CD6C0]"> Mongolia </span></h2>
+                        <p class="text-[#7C8DB0] mt-2 text-sm md:text-base">Traditional Mongolian yurts consists of an angled latticework of wood or bamboo for walls, ribs, and a wheel.</p>
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+        <button class="w-[195px] h-[48px] bg-[#605DEC] block text-[#FAFAFA] text-[18px] m-auto">Explore more stays</button>
+    </div>
+</section>
+
+<section class="py-12 px-4 md:px-0">
+    <div class="container mx-auto flex flex-col gap-8">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+            <h2 class="text-[#6E7491] text-2xl md:text-3xl">What <span class="text-[#605DEC]">Tripma</span> users are saying</h2>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="card bg-white rounded-lg shadow-lg flex flex-col">
+                
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div class="w-full h-auto flex gap-[20px]">
+                        <div>
+                            <img src="./images/avatar.svg" >
+                        </div>
+                        <div>
+                            <h2 class="text-[#27273F] text[18px] font-normal">Yifei Chen</h2>
+                            <h3 class="text-[#27273F] text-[18px] font-medium">Seoul, South Korea | April 2019</h3>
+                        </div>
+                    </div>
+                 <div class="flex flex-col gap-[20px]">
+                    <div class="flex ">
+                        <img src="./images/star row.svg">
+                      </div>
+                      <div>
+                        <h2 class="text-[18px] font-normal leading-[24px]">What a great experience using Tripma! I booked all of my flights for my gap year through Tripma and never had any issues. When I had to cancel a flight because of an emergency, Tripma support helped me read more...</h2>
+                      </div>
+                    </div>
+                 </div>
+                 
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg flex flex-col">
+                
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div class="w-full h-auto flex gap-[20px]">
+                        <div>
+                            <img src="./images/avatar 2.0.svg" >
+                        </div>
+                        <div>
+                            <h2 class="text-[#27273F] text[18px] font-normal">Kaori Yamaguchi</h2>
+                            <h3 class="text-[#27273F] text-[18px] font-medium">Honolulu, Hawaii | February 2017</h3>
+                        </div>
+                    </div>
+                 <div class="flex flex-col gap-[20px]">
+                    <div class="flex ">
+                        <img src="./images/star row.svg">
+                      </div>
+                      <div>
+                        <h2 class="text-[18px] font-normal leading-[24px]">My family and I visit Hawaii every year, and we usually book our flights using other services. Tripma was recommened to us by a long time friend, and I’m so glad we tried it out! The process was easy and read more...</h2>
+                      </div>
+                    </div>
+                 </div>
+                 
+            </div>
+            <div class="card bg-white rounded-lg shadow-lg flex flex-col">
+                
+                <div class="p-6 flex flex-col justify-between flex-1">
+                    <div class="w-full h-auto flex gap-[20px]">
+                        <div>
+                            <img src="./images/avatar2.svg" >
+                        </div>
+                        <div>
+                            <h2 class="text-[#27273F] text[18px] font-normal">Anthony Lewis</h2>
+                            <h3 class="text-[#27273F] text-[18px] font-medium">Berlin, Germany | April 2019</h3>
+                        </div>
+                    </div>
+                 <div class="flex flex-col gap-[20px]">
+                    <div class="flex ">
+                        <img src="./images/star row.svg">
+                      </div>
+                      <div>
+                        <h2 class="text-[18px] font-normal leading-[24px]">When I was looking to book my flight to Berlin from LAX, Tripma had the best browsing experiece so I figured I’d give it a try. It was my first time using Tripma, but I’d definitely recommend it to a friend and use it for read more...</h2>
+                      </div>
+                    </div>
+                 </div>
+                 
+            </div>
+        </div>
+    </div>
+</section>
+      </main>
+
+      <script src="./Js/app.js"></script>
 </body>
 </html>
